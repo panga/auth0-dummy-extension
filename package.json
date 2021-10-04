@@ -1,0 +1,36 @@
+{
+    "name": "auth0-dummy-extension",
+    "version": "1.0.0",
+    "description": "Dummy extension",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./server.js",
+        "build": "npm run extension:build",
+        "extension:build": "a0-ext build:server ./index.js ./dist && cp ./dist/auth0-dummy-extension.extension.$npm_package_version.js ./build/bundle.js"
+    },
+    "keywords": [
+        "auth0"
+    ],
+    "author": "panga",
+    "license": "ISC",
+    "dependencies": {
+        "express": "4.17.1",
+        "webtask-tools": "^3.4.1"
+    },
+    "devDependencies": {
+        "auth0-extensions-cli": "^4.0.4"
+    },
+    "auth0-extension": {
+        "useBabel": false,
+        "useHashName": false,
+        "externals": [
+            "express@4.17.1",
+            "webtask-tools"
+        ],
+        "excluded": [
+            "safe-eval",
+            "express-conditional-middleware",
+            "pino"
+        ]
+    }
+}

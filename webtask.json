@@ -1,0 +1,18 @@
+{
+    "title": "Auth0 Dummy Extension",
+    "name": "auth0-dummy-extension",
+    "version": "1.0.0",
+    "author": "panga",
+    "useHashName": false,
+    "description": "dummy extension",
+    "type": "application",
+    "category": "end_user",
+    "logoUrl": "https://cdn.auth0.com/styleguide/components/1.0.8/media/logos/img/badge.png",
+    "initialUrlPath": "/",
+    "keywords": [
+      "auth0",
+      "extension"
+    ],
+    "secrets": {
+    }
+  }  
