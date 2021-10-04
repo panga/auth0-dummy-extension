@@ -1,7 +1,7 @@
 {
     "title": "Auth0 Dummy Extension",
     "name": "auth0-dummy-extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "panga",
     "useHashName": false,
     "description": "dummy extension",
